@@ -1,0 +1,380 @@
+/* DESKTOP */
+@media screen and (min-width: 1021px){
+
+	.container{
+			width: 1000px;
+	}
+	nav#top #menuanchor{
+		display: none;
+	}
+	
+}
+
+/* MOBILE & TABLET */
+@media screen and (max-width: 1020px){
+
+	.container{
+		width: 100%;
+	}
+
+	nav#top #menuanchor{
+		float: right;
+		padding: 0 20px;
+		height: 60px;
+		line-height: 60px;
+		cursor: pointer;
+	}
+	nav#top, nav#top.fixed{
+		height: auto;
+		max-height: 60px;
+		-webkit-transition: all .25s linear;
+		-moz-transition: all .25s linear;
+		-ms-transition: all .25s linear;
+		transition: all .25s linear;
+	}
+	nav#top ul{
+		width: 100%;
+		float: left;
+		line-height: 0px;
+		max-height: 0px;
+		overflow: hidden;
+		-webkit-transition: all .15s linear;
+		-moz-transition: all .15s linear;
+		-ms-transition: all .15s linear;
+		transition: all .15s linear;
+	}
+	nav#top ul li{
+		width: 100%;
+		margin: 0;
+		height: 60px;
+		line-height: 60px;
+		border-top: 1px solid #e4e4e4;
+	}
+	nav#top ul li:first-child{
+		display: inline-block;
+	}
+	nav#top ul li:not(.logo) a{
+		width: 100%;
+		display: inline-block;
+	}
+	nav#top ul li:not(.logo) a:hover{
+		background: #f5f5f5;
+	}
+	nav#top ul li.logo{
+		position: absolute;
+		top: 5px;
+		left: -1px;
+		transform: scale(0.8);
+		border-top: 0;
+	}
+	nav#top.fixed{
+		padding: 10px 0 0 0;
+	}
+	nav#top.fixed #menuanchor{
+		line-height: 52px;
+	}
+	nav#top.menuopen{
+		height: auto;
+		max-height: 480px;
+	}
+	nav#top.menuopen #menuanchor{
+		color: #a40000;
+	}
+	nav#top.menuopen ul{
+		-webkit-transition: all .25s linear;
+		-moz-transition: all .25s linear;
+		-ms-transition: all .25s linear;
+		transition: all .25s linear;
+		max-height: 480px;
+	}
+
+	header{
+		height: 85%;
+		margin-top: 60px;
+	}
+	div#logo{
+		top: 20px;
+		width: 70%;
+	}
+	div#logo img{
+		max-width: 100%;
+		max-height: 230px;
+	}
+	div#contacts{
+		padding: 0 0 30px 0;
+		width: 100%;
+	}
+	div#contacts .phones div{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+	}
+	div#contacts .phones div.sep{
+		display: none;
+	}
+	div#contacts .arrow:after{
+		bottom: -5px;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-animation: arrow 400ms infinite alternate linear;
+		-moz-animation: arrow 400ms infinite alternate linear;
+		animation: arrow 400ms infinite alternate linear;
+	}
+
+	#slide img{
+		width: auto;
+		height: 100% !important;
+		position: relative;
+		max-height: 100%;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-next{
+		top: 40px;
+		opacity: 0.4;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-prev{
+		top: 40px;
+		opacity: 0.4;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-next:hover{
+		opacity: 0.9;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-prev:hover{
+		opacity: 0.9;
+	}
+
+	main #trabalhos{
+		text-align: center;
+		padding: 40px 15px 0 15px;
+	}
+	main #posts{
+		width: 100%;
+	}
+	main #posts .post{
+		width: 100%;
+		height: 220px;
+		overflow: hidden;
+	}
+	main #posts .post .box{
+		width: 100%;
+	}
+	main #posts .post:nth-child(even){
+		float: left;
+		padding: 0;
+	}
+	main #posts .post .box .title, main #posts .post .box .infos{
+		-webkit-transform: translateY(0%);
+		-moz-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+	main #posts .post .box img{
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+		-moz-opacity: 0.40;
+		opacity: 0.40;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=40);
+	}
+	main #posts #moreposts{
+		width: 100%;
+	}
+	main #posts #moreposts .link-more{
+		width: 100%;
+	}
+	main #posts #moreposts .link-more #load-more-posts{
+		font-size: 14px;
+		padding: 0 30px;
+	}
+
+	main #quemsou{
+		padding: 30px 0;
+	}
+	main #quemsou .container{
+		padding: 0 30px;
+	}
+	main #quemsou .left{
+		width: 100%;
+	}
+	main #quemsou .left .photo{
+		width: 100%;
+		height: auto;
+	}
+	main #quemsou .left .photo img{
+		width: 100%;
+		height: auto;
+	}
+	main #quemsou .right{
+		float: right;
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+	main #quemsou .right p{
+		text-align: justify;
+	}
+	main #quemsou .right blockquote{
+		padding: 0;
+		text-align: justify;
+	}
+
+	main #servicos .left{
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+	}
+	main #servicos .left h2{
+		margin: 0 0 5px 0;
+	}
+	main #servicos .right{
+		width: 80%;
+		margin: 20px 10% 0 10%;
+	}
+	main #servicos .right ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	main #servicos .right ul li{
+		margin: 12px 0;
+		width: 100%;
+		line-height: 26px;
+	}
+
+	main #contato{
+		width: 88%;
+		margin: 50px 6%;
+	}
+	main #contato h2{
+		margin: 40px 0 38px 0;
+	}
+	main #contato .form-control{
+		width: 100%;
+	}
+	main #contato .form-control .half{
+		width: 100%;
+	}
+	main #contato .form-control .half input{
+		width: 100%;
+	}
+	main #contato .form-control label:not(.error){
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	main #contato .form-control input, main #contato .form-control select, main #contato .form-control textarea{
+		width: 100%;
+		border-radius: 5px;
+		padding: 0 16px 0 66px;
+	}
+	main #contato .form-control input[type=radio] + label, main #contato .form-control input[type=checkbox] + label{
+		width: 100%;
+	}
+	main #contato .form-control input[id=automaquiagem] + label, main #contato .form-control input[id=maquiagemprofissional] + label, main #contato .form-control input[id=producaodebutante] + label{
+		line-height: 50px;
+		padding-top: 0;
+	}
+	main #contato .form-control textarea{
+		padding: 16px 16px 16px 66px;
+	}
+	.form-control label.error{
+		font-size: 0;
+	}
+	.form-control label.error:before{
+		content: '*';
+		font-size: 18px;
+		line-height: 58px;
+	}
+
+	article{
+		width: 90%;
+		margin: 30px 5%;
+		padding: 0;
+	}
+	div#contacts .title h1{
+			padding: 0 10%;
+	}
+
+	div[id*=gallery] .gallery-item{
+	  width: 37% !important;
+	  margin: 0px 6% !important;
+	  margin-bottom: 20px !important;
+	}
+	div[id*=gallery] img{
+		width: 100% !important;
+	}
+	div[id*=gallery] .gallery-caption{
+	  width: 105.6%;
+	  width: calc(100% + 8px);
+	  border-bottom: 3px solid #cfcfcf;
+	  border: 4px solid #eaeaea !important;
+	}
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 790px) {
+
+	#slide img{
+		width: auto;
+		height: 100% !important;
+		position: relative;
+		max-height: 100%;
+		left: 50%;
+		-moz-transform: scale(1.1) translateX(-50%);
+		-webkit-transform: scale(1.1) translateX(-50%);
+		-o-transform: scale(1.1) translateX(-50%);
+		-ms-transform: scale(1.1) translateX(-50%);
+		transform: scale(1.1) translateX(-50%);
+	}
+
+}
+
+/* TABLET */
+@media screen and (min-width: 780px) and (max-width: 1020px){
+
+	header{
+		height: 75%;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-next{
+		top: 49%;
+	}
+	#slide .nemus-slider.controls-inside .nemus-direction-nav .nemus-prev{
+		top: 49%;
+	}
+	.container, main #posts{
+		width: 60%;
+		margin: 0 auto;
+	}
+	main #posts{
+		padding: 0 5%;
+	}
+	main #quemsou .left{
+		width: 70%;
+		margin: 0 15%;
+	}
+	main #servicos .right{
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+	main #servicos .right ul{
+		padding: 0 0 0 5%;
+		list-style: circle;
+		text-align: left;
+	}
+	main #servicos .right ul li{
+		width: 50%;
+	}
+
+}
+
+/* FIXES */
+@media screen and (min-width: 800px) and (max-height: 620px){
+	#slide img{
+		height: auto !important;
+		max-height: 10000px !important;
+		width: 100% !important;
+	}
+}
